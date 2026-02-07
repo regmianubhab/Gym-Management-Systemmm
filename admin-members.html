@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Members | FITFLOW Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="admin-body">
+    <div class="dashboard-wrapper">
+      <div class="sidebar">
+        <h2 class="logo" style="margin-bottom: 40px">FIT<span>FLOW</span></h2>
+        <a href="admin-dashboard.html" class="side-link"
+          ><span>🏠 Dashboard</span></a
+        >
+        <a href="admin-members.html" class="side-link active"
+          ><span>👥 Members</span></a
+        >
+        <a href="admin-classes.html" class="side-link"
+          ><span>📅 Classes</span></a
+        >
+        <a href="admin-staff.html" class="side-link"><span>🏋️ Staff</span></a>
+        <a href="admin-payments.html" class="side-link"
+          ><span>💳 Payments</span></a
+        >
+        <a href="admin-analytics.html" class="side-link"
+          ><span>📊 Analytics</span></a
+        >
+        <a
+          href="index.html"
+          class="side-link"
+          style="color: var(--danger); margin-top: 50px"
+          ><span>🚪 Logout</span></a
+        >
+      </div>
+
+      <main class="main-content">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <h2>Member <span>Directory</span></h2>
+          <button class="btn-cta">+ Add New Member</button>
+        </div>
+
+        <div class="table-container">
+          <div style="margin-bottom: 20px">
+            <input
+              type="text"
+              placeholder="Search by name or ID..."
+              style="
+                background: #252525;
+                border: none;
+                padding: 12px;
+                border-radius: 8px;
+                color: white;
+                width: 300px;
+              "
+            />
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Membership</th>
+                <th>Join Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td>
+                <td>
+                  <img
+                    src="https://i.pravatar.cc/40?u=1"
+                    style="border-radius: 50%"
+                  />
+                </td>
+                <td>Sagar Thapa</td>
+                <td>Platinum (Annual)</td>
+                <td>Jan 05, 2026</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>#1002</td>
+                <td>
+                  <img
+                    src="https://i.pravatar.cc/40?u=2"
+                    style="border-radius: 50%"
+                  />
+                </td>
+                <td>Sita Rai</td>
+                <td>Basic (Monthly)</td>
+                <td>Jan 12, 2026</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>#1003</td>
+                <td>
+                  <img
+                    src="https://i.pravatar.cc/40?u=3"
+                    style="border-radius: 50%"
+                  />
+                </td>
+                <td>Prakash KC</td>
+                <td>Basic (Monthly)</td>
+                <td>Feb 01, 2026</td>
+                <td>
+                  <span
+                    class="status"
+                    style="background: rgba(255, 71, 87, 0.2); color: #ff4757"
+                    >Expired</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

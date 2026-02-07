@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Dashboard | Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="admin-body">
+    <div class="dashboard-wrapper">
+      <div class="sidebar">
+        <h2 class="logo" style="margin-bottom: 40px">FIT<span>FLOW</span></h2>
+        <a href="admin-dashboard.html" class="side-link active"
+          ><span>🏠 Dashboard</span></a
+        >
+        <a href="admin-members.html" class="side-link"
+          ><span>👥 Members</span></a
+        >
+        <a href="admin-classes.html" class="side-link"
+          ><span>📅 Classes</span></a
+        >
+        <a href="admin-staff.html" class="side-link"><span>🏋️ Staff</span></a>
+        <a href="admin-payments.html" class="side-link"
+          ><span>💳 Payments</span></a
+        >
+        <a href="admin-analytics.html" class="side-link"
+          ><span>📊 Analytics</span></a
+        >
+        <a
+          href="index.html"
+          class="side-link"
+          style="color: var(--danger); margin-top: 50px"
+          ><span>🚪 Logout</span></a
+        >
+      </div>
+
+      <main class="main-content">
+        <h2 style="margin-bottom: 30px">Overview <span>Statistics</span></h2>
+        <div class="grid-3">
+          <div class="card" style="background: #1a1a1a; color: white">
+            <p style="color: var(--text-muted)">Total Revenue</p>
+            <h1 style="color: var(--primary)">$12,450.00</h1>
+          </div>
+          <div class="card" style="background: #1a1a1a; color: white">
+            <p style="color: var(--text-muted)">Active Members</p>
+            <h1 style="color: var(--primary)">842</h1>
+          </div>
+          <div class="card" style="background: #1a1a1a; color: white">
+            <p style="color: var(--text-muted)">Staff Online</p>
+            <h1 style="color: var(--primary)">12</h1>
+          </div>
+        </div>
+
+        <div class="table-container" style="margin-top: 40px">
+          <h3>Recent <span>Bookings</span></h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Member</th>
+                <th>Class</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arun Kumar</td>
+                <td>Power Yoga</td>
+                <td>06:00 AM</td>
+                <td><span class="status active">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Sita Rai</td>
+                <td>HIIT Cardio</td>
+                <td>05:30 PM</td>
+                <td><span class="status active">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
